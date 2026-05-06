@@ -126,7 +126,7 @@ p { color: var(--text-mid); }
 .callout { background: var(--green-pale); border-left: 3px solid var(--green-mid); border-radius: 0 6px 6px 0; padding: 1rem 1.25rem; font-size: 0.9rem; color: var(--text-mid); margin: 1.5rem 0; }
 .callout-orange { background: var(--orange-light); border-left-color: var(--orange); }
 hr.divider { border: none; border-top: 1px solid var(--border); }
-.about-split { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; padding: 4rem 2rem; max-width: 900px; margin: 0 auto; }
+.about-split { display: grid; grid-template-columns: 1fr; gap: 2rem; align-items: start; padding: 4rem 2rem; max-width: 720px; margin: 0 auto; }
 .theory-block { background: var(--warm-white); border: 1px solid var(--border); border-radius: 8px; padding: 1.1rem 1.25rem; margin-bottom: 0.85rem; }
 .theory-block h3 { font-size: 0.9rem; margin-bottom: 0.3rem; }
 .theory-block p { font-size: 0.82rem; }
@@ -141,6 +141,8 @@ hr.divider { border: none; border-top: 1px solid var(--border); }
 .week-table tr:nth-child(even) td { background: var(--warm-white); }
 .week-table tr:last-child td { border-bottom: none; }
 .week-label { color: var(--text-light); font-size: 0.78rem; }
+.photo-placeholder { background: #C8C8C8; border-radius: 6px; display: flex; flex-direction: column; align-items: center; justify-content: center; color: #555; font-size: 0.82rem; font-weight: 500; gap: 0.3rem; margin: 1.5rem 0; }
+.photo-placeholder .ph-dims { font-size: 0.72rem; color: #777; }
 footer { background: var(--green-dark); color: white; text-align: center; padding: 2rem; font-size: 0.85rem; margin-top: 4rem; }
 footer p { color: white; }
 @media (max-width: 680px) {
@@ -162,6 +164,8 @@ footer p { color: white; }
     <li><a id="nav-home" onclick="showPage('home')" class="active">Home</a></li>
     <li><a id="nav-how" onclick="showPage('how')">How it works</a></li>
     <li><a id="nav-sessions" onclick="showPage('sessions')">Sessions</a></li>
+    <li><a id="nav-host" onclick="showPage('host')">For hosts</a></li>
+    <li><a id="nav-participants" onclick="showPage('participants')">For participants</a></li>
     <li><a id="nav-resources" onclick="showPage('resources')">Resources</a></li>
     <li><a id="nav-about" onclick="showPage('about')">About</a></li>
   </ul>
@@ -179,23 +183,25 @@ footer p { color: white; }
     </div>
   </div>
 
+  <div class="photo-placeholder" style="height:320px; width:100%; border-radius:0; margin:0;">
+    <span>📷 Hero banner: joyful group of children and parents gathered around a kitchen counter with food</span>
+    <span class="ph-dims">1440 × 640 px · Prompt: "Warm, candid photo of 3 families with children ages 3–14 around a large kitchen island covered in fresh vegetables and ingredients, everyone smiling and engaged, natural light, cozy home kitchen"</span>
+  </div>
   <div class="problem-strip">
     <div class="problem-strip-inner">
       <div>
-        <div class="section-label">The real problem</div>
-        <h2>Knowing what's healthy doesn't make kids eat it</h2>
+            <h2>Developing habits that stick</h2>
       </div>
       <div>
-        <p style="margin-bottom: 1rem;">Most children already know vegetables are healthy and snacks usually aren't. Yet children and adults alike often gravitate towards the easier, less healthy option. The problem isn't nutrition knowledge, it's the lack of consistent eating habits in a household where effort constraints are real and fast food is always the easier option.</p>
-        <p>Show Tell Share gives families a repeatable system, not a one-time lesson, that gradually moves children from "I won't touch that" to "Can I help make it?"</p>
+        <p style="margin-bottom: 1rem;">Knowing what's healthy isn't enough. Children eat what they're used to, what their peers eat, and what they helped make. The gap isn't knowledge, it's habit.</p>
+        <p>Show Tell Share builds that habit through a repeatable system that moves children from "I won't touch that" to "Can I help make it?"</p>
       </div>
     </div>
   </div>
 
   <section>
-    <div class="section-label">What makes this different</div>
     <h2>Built around how children actually learn</h2>
-    <p class="lead">Children don't build lasting habits from lectures nor motivation from stickers. Sustainable habits are progressively crafted through watching, doing, and owning. Show Tell Share's sessions are built entirely on that foundation.</p>
+    <p class="lead">Habits form through watching, doing, and owning. Not lectures or reward charts. Every part of the gathering is built around that.</p>
     <div class="cards-grid">
       <div class="card">
         <div class="card-icon">&#x1F955;</div>
@@ -222,33 +228,35 @@ footer p { color: white; }
 
   <hr class="divider">
 
+  <section style="padding:0; max-width:100%;">
+    <div class="photo-placeholder" style="height:260px; width:100%; border-radius:0; margin:0;">
+      <span>📷 Show &amp; Tell moment: a child presenting a whole vegetable to a circle of attentive children</span>
+      <span class="ph-dims">900 × 400 px · Prompt: "Candid photo of a young child holding up a whole broccoli or cabbage to a small circle of children sitting on the floor, warm home setting, natural light, curious expressions"</span>
+    </div>
+  </section>
+
   <section>
-    <div class="section-label">How children grow</div>
     <h2>A developmental progression built in</h2>
     <p class="lead">Every session is adapted to where a child's capabilities actually are, not just what age they're at. As they grow, their role in the gathering deepens and their autonomy increases.</p>
     <div class="phases">
       <div class="phase">
         <div class="phase-num">Phase 1 · Ages 2 to 4</div>
-        <h3>Exposure &amp; Play</h3>
-        <p>Sensory exploration. Touch, observe, smell. Parent guides everything.</p>
+        <p>Touch, observe, smell. Parent guides everything.</p>
         <span class="phase-tag tag-green">High support</span>
       </div>
       <div class="phase">
         <div class="phase-num">Phase 2 · Ages 4 to 7</div>
-        <h3>Exploration &amp; Choice</h3>
         <p>Choosing ingredients, assembling simple dishes, comparing foods.</p>
         <span class="phase-tag tag-green">Guided support</span>
       </div>
       <div class="phase">
         <div class="phase-num">Phase 3 · Ages 7 to 12</div>
-        <h3>Responsibility</h3>
-        <p>Planning parts of meals, basic food prep, simple nutrition concepts.</p>
+        <p>Basic food prep, simple recipes, light nutrition awareness.</p>
         <span class="phase-tag tag-orange">Facilitated</span>
       </div>
       <div class="phase">
         <div class="phase-num">Phase 4 · Ages 12 to 18</div>
-        <h3>Independence</h3>
-        <p>Full meal planning, budgeting, connecting food to health and identity.</p>
+        <p>Full meal planning, independent cooking, connecting food to identity.</p>
         <span class="phase-tag tag-orange">Minimal guidance</span>
       </div>
     </div>
@@ -258,7 +266,6 @@ footer p { color: white; }
   </section>
 
   <section style="padding-top: 0;">
-    <div class="section-label">What parents are searching for</div>
     <h2>If you've searched any of these, this is for you</h2>
     <div class="theme-grid" style="margin-top: 1rem;">
       <div class="theme-tag">picky eaters</div>
@@ -277,37 +284,83 @@ footer p { color: white; }
 <!-- HOW IT WORKS -->
 <div id="page-how" class="page">
   <section>
-    <div class="section-label">The structure</div>
     <h2>How a Show Tell Share gathering works</h2>
     <p class="lead">Every gathering follows the same core structure by design. The predictability helps children feel secure, and when children know what to expect, they'll feel safe enough to transition from being a passive observer to an active participant. The exploration and sharing routines reinforce habits that carry into everyday life.</p>
     <div class="steps">
       <div class="step">
-        <h3>Before the gathering: pick your item</h3>
-        <p>Each child picks and learns about a healthy food item to bring and present. Younger children choose with a parent's help from simpler ingredients such as a vegetable or fruit. Older children choose independently and may pick a multi-ingredient dish. When confirming attendance, families flag their item as one of two formats: <strong>bring-and-prep</strong> (raw ingredients brought to prepare at the gathering) or <strong>bring-and-share</strong> (pre-cooked at home because the dish requires longer cooking time). For younger children who had their food prepared at home, a key raw ingredient should be brought alongside the dish so children still have something whole and unaltered to present.</p>
+        <h3>Before the gathering: pick your item and flag your format</h3>
+        <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1; margin-top:0.4rem;">
+          <li>Each child picks a food item to bring: a vegetable, fruit, or simple dish</li>
+          <li>Younger children choose with a parent; older children choose independently</li>
+          <li>Each family flags their format when confirming:
+            <ul style="padding-left:1.2rem; margin-top:0.2rem;">
+              <li><strong>Needs-prep:</strong> raw ingredient brought to prepare at the gathering</li>
+              <li><strong>Ready-to-eat:</strong> dish cooked at home. Bring the key raw ingredient alongside so the child has something whole to present</li>
+            </ul>
+          </li>
+        </ul>
       </div>
       <div class="step">
-        <h3>Arrive, set up, and preparation</h3>
-        <p>Families arrive and set out their raw ingredients and bring-and-share dishes. The facilitator announces the session challenge and parents help their children get oriented to begin. From here, children proceed through the challenge: how to present their item, how to approach preparation, what to pay attention to at the table of food, and topics to discuss during mealtime.</p>
+        <h3>Arrive and set up</h3>
+        <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1; margin-top:0.4rem;">
+          <li>Host sets up before anyone arrives</li>
+          <li>Set up one prep table per skill phase represented, not one per family
+            <ul style="padding-left:1.2rem; margin-top:0.2rem;">
+              <li>Each table needs: cutting board, age-appropriate knife, scrap bowl, paper towels</li>
+              <li>Phase 1 children can work at a low coffee table or bar stool height</li>
+            </ul>
+          </li>
+          <li>Ready-to-eat families: place dish on the dining table, keep raw ingredient out for Show &amp; Tell</li>
+          <li>Needs-prep families: go to the prep table for their phase</li>
+          <li>Once everyone is settled, gather the children and announce this week's focus</li>
+        </ul>
       </div>
       <div class="step">
-        <h3>Show &amp; Tell: first wave (raw and bring-and-prep items)</h3>
-        <p>Children are seated together in a circle and one by one begin to present their selected ingredient. The presenting child introduces the ingredient, with topics such as why they chose it, how it's farmed, the nutritional benefits, and how it's often used. The raw ingredient is then passed around so each child can observe, touch, and smell it. For younger children, this is a structured, guided moment. For older children, the flow can be more natural and conversational.</p>
+        <h3>Show &amp; Tell</h3>
+        <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1; margin-top:0.4rem;">
+          <li>Gather all children in a circle</li>
+          <li>Each child presents their item:
+            <ul style="padding-left:1.2rem; margin-top:0.2rem;">
+              <li>Needs-prep: show the raw ingredient whole</li>
+              <li>Ready-to-eat: show the raw ingredient alongside the finished dish</li>
+            </ul>
+          </li>
+          <li>Pass the item around. Touch it, smell it.</li>
+          <li>Keep it conversational: "What is it? Where does it come from? Has anyone tried it before?"</li>
+          <li>After presenting: ready-to-eat dishes go to the dining table, needs-prep items go to the prep table</li>
+        </ul>
       </div>
       <div class="step">
         <h3>Prepare together</h3>
-        <p>Children are assigned preparation tasks based on their cooking capabilities. Inexperienced children help wash, tear, and arrange. Experienced children chop, mix, and assemble. In experience-mixed groups, children are encouraged to teach and learn from one another. Children should continue to think, talk, and apply the session challenge as they prepare the food.</p>
+        <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1; margin-top:0.4rem;">
+          <li>Direct each child to the prep table for their phase after Show &amp; Tell</li>
+          <li>Phase tasks by level:
+            <ul style="padding-left:1.2rem; margin-top:0.2rem;">
+              <li><strong>Phase 1 (ages 2–4):</strong> wash produce, tear vegetables by hand, arrange items on a plate</li>
+              <li><strong>Phase 2 (ages 4–7):</strong> peel soft vegetables, spread with a butter knife, juice citrus, mix salads</li>
+              <li><strong>Phase 3 (ages 7–12):</strong> chop with a table knife, follow a simple recipe, boil water with supervision</li>
+              <li><strong>Phase 4 (ages 12–18):</strong> lead a full dish or station, adjust seasoning, manage their area independently</li>
+            </ul>
+          </li>
+          <li>Ready-to-eat items are already on the dining table, their raw ingredient was presented in Show &amp; Tell and does not need prep. Hot dishes and soups go directly on the dining table. Do not hand these to young children.</li>
+          <li>Where phases mix at the same station, the older child leads and the younger child assists</li>
+          <li>Adults stay nearby but do not take over. Correct only for safety, not for messiness or imperfect results.</li>
+          <li>If a child finishes early, they can help arrange the dining table or assist at another phase's station</li>
+        </ul>
       </div>
       <div class="step">
-        <h3>Show &amp; Tell: second wave (bring-and-share dishes)</h3>
-        <p>Once all dishes are prepared and placed at the gathering table, children are encouraged to present the dish containing their selected ingredient. "This is what it looks like when cooked." This keeps the ownership and transformation arc intact for every child and gives the group one more moment of curiosity before the meal begins.</p>
-      </div>
-      <div class="step">
-        <h3>Eat together</h3>
-        <p>Children eat what the group prepared together, alongside their peers and adults in a relaxed social setting. The meal should happen with no coaxing and language such as "just one bite." Studies on social facilitation in children's eating consistently show one of the most reliable ways to reduce food rejection is seeing other children eat. Children are also significantly more likely to try food they helped prepare.</p>
-      </div>
-      <div class="step">
-        <h3>Close with a reflection</h3>
-        <p>The reflection question connects back to the session challenge. Children are given a moment to articulate what they noticed, made, or discovered. Reflection is a core component of Experiential Learning and closes the loop between the challenge set at the start and what was experienced.</p>
+        <h3>Eat and reflect together</h3>
+        <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1; margin-top:0.4rem;">
+          <li>Everyone eats at the same table, children and adults together</li>
+          <li>No coaxing, no "just one bite"</li>
+          <li>Adults try things first and describe what they notice</li>
+          <li>Keep it warm and social</li>
+          <li>End with one question around the table: "What was something you noticed today?"
+            <ul style="padding-left:1.2rem; margin-top:0.2rem;">
+              <li>Toddlers can point. Older children give a sentence. No wrong answers.</li>
+            </ul>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
@@ -315,218 +368,202 @@ footer p { color: white; }
   <hr class="divider">
 
   <section id="skill-section">
-    <div class="section-label">Grouping children</div>
-    <h2>Skill-based grouping, not age-based</h2>
-    <p class="lead">In these gatherings, age is a suggestion, not a rule. A 5-year-old who cooks regularly with their parents may be ready for tasks a typical 8-year-old hasn't tried. On the flip side, a 13-year-old who is new to the kitchen may need a different entry point than a similarly aged child who has been cooking for years. Use the filter questions below as a guidance. You know your child better than any framework does.</p>
-    <div class="skill-selector">
-      <h3>Skill-based level finder</h3>
-      <p style="font-size: 0.88rem; color: var(--text-light);">Select every skill your child currently has and the suggested level will update automatically.</p>
-      <div class="skill-options">
-        <div class="skill-opt" onclick="selectSkill(this,'q1')">Uses a spoon or fork independently</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q2')">Identifies colors and shapes on food</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q3')">Has washed, torn, or peeled food before</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q4')">Can use scissors safely</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q5')">Can follow a 2-step instruction without reminders</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q6')">Comfortable with a butter knife or Y-peeler</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q7')">Has helped choose ingredients at the store</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q8')">Can work the stovetop or oven safely with supervision</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q9')">Can read and follow a simple recipe independently</div>
-        <div class="skill-opt" onclick="selectSkill(this,'q10')">Has cooked a full dish with minimal adult help</div>
-      </div>
-      <div class="skill-result" id="skill-result">Select the skills your child has to see a suggested level.</div>
+    <h2>How children are grouped</h2>
+    <p class="lead">Children are placed at prep tables by skill phase, not by age or family. Select the situation that applies to your family.</p>
+
+    <div class="session-tabs" style="grid-template-columns: repeat(3,1fr); margin-top:1.5rem;">
+      <div class="session-tab active" onclick="showGrouping(this,'g1')">I have 1 child</div>
+      <div class="session-tab" onclick="showGrouping(this,'g2')">Multiple, similar ages</div>
+      <div class="session-tab" onclick="showGrouping(this,'g3')">Multiple, different ages</div>
     </div>
-    <div class="callout" style="margin-top: 2rem;">
-      <strong>Siblings at the same gathering:</strong> Siblings on different skill levels should be assigned to distinct roles rather than put on the same task. The older child can lead the Show &amp; Tell moment or guide the preparation, while the younger child can handle washing, tearing, or arranging. Both roles need to present a slight but achievable challenge in the Zone of Proximal Development, where the task is just beyond what they can do alone, allowing them to stretch their skills with the right amount of guidance.
+
+    <div id="g1" class="session-content active" style="margin-top:1.5rem;">
+      <p style="font-size:0.9rem; color:var(--text-mid); margin-bottom:1rem;">Use the <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">skill-based level finder</a> on the Resources page to find your child's phase before the first session. Your child will work at the prep table for their phase alongside children from other families at the same level.</p>
+      <div class="callout">
+        Phase determines the prep table. Use the skill finder again when your child's skills grow.
+      </div>
+    </div>
+
+    <div id="g2" class="session-content" style="margin-top:1.5rem;">
+      <p style="font-size:0.9rem; color:var(--text-mid); margin-bottom:1rem;">Run the <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">skill finder</a> for each child separately. Children close in age often land in the same phase, but not always.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+        <div style="background:var(--green-pale); border-radius:8px; padding:1.1rem 1.25rem;">
+          <p style="font-size:0.82rem; font-weight:500; color:var(--green-dark); margin-bottom:0.5rem;">Same phase</p>
+          <p style="font-size:0.85rem; color:var(--text-mid);">They work at the same table and can be paired on a task together. This works well, peer collaboration at the same level is productive and enjoyable.</p>
+        </div>
+        <div style="background:var(--orange-light); border-radius:8px; padding:1.1rem 1.25rem;">
+          <p style="font-size:0.82rem; font-weight:500; color:var(--orange); margin-bottom:0.5rem;">Different phases</p>
+          <p style="font-size:0.85rem; color:var(--text-mid);">Separate them so each child works at the right table. Don't assume they should work together just because they're close in age.</p>
+        </div>
+      </div>
+      <div class="callout">
+        A child who is slightly more capable than a sibling learns more from teaching than from doing it themselves. The higher-phase child benefits from being given a lead role, not a shared task.
+      </div>
+    </div>
+
+    <div id="g3" class="session-content" style="margin-top:1.5rem;">
+      <p style="font-size:0.9rem; color:var(--text-mid); margin-bottom:1rem;">Each child goes to the prep table for their own phase. This is the intended model. The gathering brings all children back together at Show &amp; Tell and at the table, the separation is only during prep.</p>
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1rem;">
+        <div style="background:var(--green-pale); border-radius:8px; padding:1.1rem 1.25rem;">
+          <p style="font-size:0.82rem; font-weight:500; color:var(--green-dark); margin-bottom:0.5rem;">Example: ages 4 and 10</p>
+          <p style="font-size:0.85rem; color:var(--text-mid);">The 4-year-old washes and peels at Phase 2. The 10-year-old chops and follows a recipe at Phase 3. They present at Show &amp; Tell together and eat at the same table.</p>
+        </div>
+        <div style="background:var(--green-pale); border-radius:8px; padding:1.1rem 1.25rem;">
+          <p style="font-size:0.82rem; font-weight:500; color:var(--green-dark); margin-bottom:0.5rem;">Example: ages 3, 7, and 14</p>
+          <p style="font-size:0.85rem; color:var(--text-mid);">The 3-year-old tears and arranges at Phase 1. The 7-year-old peels and mixes at Phase 2. The 14-year-old leads a dish at Phase 4 and can take the host role.</p>
+        </div>
+      </div>
+      <div class="callout callout-orange">
+        <strong>Age is a guide, not a rule.</strong> A 5-year-old who cooks regularly may be Phase 3. A 12-year-old new to the kitchen may be Phase 2. Always use the <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">skill finder</a> rather than defaulting to age.
+      </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <section>
-    <div class="section-label">Keeping older kids engaged</div>
-    <h2>What actually works for adolescents</h2>
-    <p class="lead">Younger children naturally follow where their parents go. However, adolescents have the choice not to and hence require more encouragement to participate in gatherings. The design choices below aim to make the gatherings feel more worth their time, and not like a family obligation.</p>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">&#x1F3C5;</div>
-        <h3>Tie it to their extracurriculars</h3>
-        <p>Organize the gathering group around an activity your teen is in, such as a sports team, music group, or school club. When other kids at the gathering are people they enjoy spending time with, the motivation to show up becomes intrinsic. A pre-game gathering for a soccer team or a post-rehearsal dinner for the orchestra are both natural entry points.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F399;</div>
-        <h3>Give them real authority, not helper roles</h3>
-        <p>Teens dislike being managed and often disengage when they feel it. Give them a lead, not a helper role. Let them facilitate the Show &amp; Tell round, plan next session's menu, or teach a skill to a younger child. When their competence is trusted, engagement follows.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F355;</div>
-        <h3>Connect food to what they already care about</h3>
-        <p>Adolescents value applicable knowledge. A teen athlete is open to conversations about performance nutrition, since food becomes a tool to help them improve at their passion. Frame the gathering around their existing interests rather than generic "healthy eating" without making the connection for them.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F91D;</div>
-        <h3>Let them bring a friend</h3>
-        <p>The social stakes are different when a teen has a friend at the gathering rather than just family. Encourage older children to bring one friend to a session. A teen who resists family obligations will often engage more when their friend is present and requires guidance from them.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4AC;</div>
-        <h3>Frame it as their contribution, not their participation</h3>
-        <p>Teens prefer to feel they are doing something for the group rather than having something done to them. "We need your help to plan this" feels different than "you have to come to this." Make their role explicit when inviting them to the gathering, and make sure to give them credit for their contribution.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4F8;</div>
-        <h3>Give them a documentation role</h3>
-        <p>Older teens can document the gathering through photography and videos. Covering the preparation, Show &amp; Tell, and the shared meal gives them a reason to be present and engaged without requiring them to join every activity. The photos and videos could be posted to their social media accounts and become a meaningful memory they discuss with friends.</p>
-      </div>
-    </div>
-    <div class="callout callout-orange" style="margin-top: 2rem;">
-      <strong>The extracurricular connection in practice:</strong> Top performers in their extracurricular activities often have good food habits. Teens are encouraged to discuss food with their peers and bring new recommendations back home. Parents should be open to trying those suggestions, as an open ear and visible action encourage further participation from the teen.
-    </div>
-  </section>
 
-  <section>
-    <div class="section-label">Themes and challenges</div>
-    <h2>Session themes</h2>
-    <div class="callout" style="margin-top:0; margin-bottom:2rem;">
-      <strong>Themes vs. challenges:</strong> These are two distinct things. The <strong>theme</strong> is the topic of the session, sent to families in advance so they can choose their food item accordingly. It shapes what they bring. The <strong>challenge</strong> is the active prompt announced at the start of the gathering itself, giving children something specific to do, notice, or apply throughout. The theme frames preparation. The challenge drives participation.
-    </div>
-    <p class="lead">A unique theme is assigned to each gathering. Families are notified in advance so they can choose their food items accordingly. Themes create structure with flexibility, and the same theme can work across all age groups at the same time.</p>
-    <div class="cards-grid">
-      <div class="card">
-        <div class="card-icon">&#x1F50D;</div>
-        <h3>Exploration</h3>
-        <p>This theme is about finding a food one has not tried before. Children can bring something unfamiliar to them or even the parents. The food does not need to be fully cooked or consumed, just learned about and maybe lightly tasted if edible. A bit of wasted food is expected here, as stepping outside the comfort zone may mean finding something unpalatable.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F30D;</div>
-        <h3>Provenance</h3>
-        <p>Children bring any food they like but investigate its origin before arriving. Where is it grown? How does it get to a store? Younger children might learn it grows underground. Older children might look into the farming method or supply chain.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F52A;</div>
-        <h3>Technique</h3>
-        <p>Each child learns and demonstrates one kitchen skill they have never done before, matched to their level. Younger children might use a peeler or squeeze citrus for the first time. Older children might work on a knife skill or learn to make an emulsion. The skill itself is the point. Children leave this session having learned something specific and nameable.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4AC;</div>
-        <h3>Connection</h3>
-        <p>Children bring food connected to a memory, tradition, or a place someone in their family came from. There's usually an intriguing story that comes with it. Sharing those stories will change how children see food they have not experienced and gives them something to be proud of to bring to the table.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4AA;</div>
-        <h3>Health Awareness</h3>
-        <p>This session discusses what food does to the body. The goal is not to categorize food as "good" or "bad", but rather let children learn the effects each food has on the body: why does one feel sluggish after some meals and energized after others? What should you eat before a sports game? Children who make the connection themselves often remember it more.</p>
-      </div>
-      <div class="card">
-        <div class="card-icon">&#x1F4CB;</div>
-        <h3>Planning</h3>
-        <p>Children design the next cycle themselves: the themes, the food categories, the challenges. Older children run the gathering and propose a full plan for what comes next. Younger children pick one food they want the group to try.</p>
-      </div>
-    </div>
-  </section>
 </div>
 
 <!-- SESSIONS -->
 <div id="page-sessions" class="page">
   <section>
-    <div class="section-label">All 6 sessions</div>
-    <h2>Full facilitation guides</h2>
-    <p class="lead">Each session below includes the full gathering structure, the session challenge with age-differentiated versions, and facilitator prompts by age group. Select a session to view its complete guide.</p>
+    <h2>Session guides</h2>
+    <p class="lead">All three gatherings follow the same 5-step structure. What changes each week is the focus, a light theme that shapes what children are thinking about without changing how the gathering runs. Each guide below includes the full step-by-step breakdown and facilitator prompts for each phase.</p>
 
-    <div class="session-tabs">
-      <div class="session-tab active" onclick="showSession(this,'s1')">Week 1: Exploration</div>
-      <div class="session-tab" onclick="showSession(this,'s2')">Week 2: Provenance</div>
-      <div class="session-tab" onclick="showSession(this,'s3')">Week 3: Technique</div>
-      <div class="session-tab" onclick="showSession(this,'s4')">Week 4: Connection</div>
-      <div class="session-tab" onclick="showSession(this,'s5')">Week 5: Health Awareness</div>
-      <div class="session-tab" onclick="showSession(this,'s6')">Week 6: Planning</div>
+    <div class="photo-placeholder" style="height:200px; width:100%; margin-bottom:1.5rem;">
+      <span>📷 Children during prep: a Phase 2 and Phase 3 child working side by side at a prep table</span>
+      <span class="ph-dims">900 × 350 px · Prompt: "Two children ages 5 and 10 working at a wooden cutting board together, one peeling a cucumber and one chopping, focused expressions, warm kitchen light"</span>
+    </div>
+
+    <div class="session-tabs" style="grid-template-columns: repeat(3,1fr);">
+      <div class="session-tab active" onclick="showSession(this,'s1')">Week 1: Try something new</div>
+      <div class="session-tab" onclick="showSession(this,'s2')">Week 2: Make something</div>
+      <div class="session-tab" onclick="showSession(this,'s3')">Week 3: Plan the next round</div>
     </div>
 
     <div id="s1" class="session-content active">
       <div class="session-card">
-        <div class="session-header"><h3>Week 1: Exploration</h3><span>Comfort and curiosity over achievement</span></div>
+        <div class="session-header"><h3>Week 1: Try something new</h3><span>Comfort and curiosity over achievement</span></div>
         <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Find something surprising."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Find a food that feels strange or different to touch.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Find an ingredient you've never cooked with and figure out what you'd do with it.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This is the first session. The primary goal is comfort and curiosity, not achievement. Announce the challenge at setup so children are thinking about it throughout. Parents should model enthusiasm and openness.</p>
+          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">The focus this week is simply trying a food no one in the group has brought before. There are no wrong choices. The goal is to get children comfortable with the structure of the gathering and curious about what others brought.</p>
           <ul class="activity-list">
-            <li><span><strong>Arrive and set up</strong><span class="activity-detail">Families unpack raw ingredients and tools. Facilitator announces the session challenge. Ask each child: "Can you show me what you brought?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave (raw items)</strong><span class="activity-detail">Each child presents their raw ingredient while still whole. For toddlers, a parent narrates. Prompt: "Where does this come from? Has anyone tried it? Does it connect to today's challenge?"</span></span></li>
-            <li><span><strong>Prep together</strong><span class="activity-detail">Children take on age-appropriate tasks. The challenge stays active: younger children describe textures as they wash and tear, older children notice how the ingredient changes through prep.</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table alongside the raw ingredient. "This is what it looked like before I cooked it."</span></span></li>
-            <li><span><strong>Eat together, family style</strong><span class="activity-detail">No coaxing, no pressure. Adults model trying new foods. Keep conversation tied to the challenge: "Did anything surprise you today?"</span></span></li>
-            <li><span><strong>Reflection</strong><span class="activity-detail">"What was one thing today that surprised you?" Toddlers can point. Older kids give a sentence. No wrong answers.</span></span></li>
+            <li><span><strong>1 · Arrive and set up</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Host sets up one prep table per skill phase before families arrive</li>
+                <li>Each table: cutting board, phase-appropriate knife, scrap bowl, paper towels</li>
+                <li>Phase 1 children work at a low surface or coffee table height</li>
+                <li>Ready-to-eat families: place dish on dining table, keep raw ingredient out for Show &amp; Tell</li>
+                <li>Needs-prep families: go to their phase's prep table</li>
+                <li>Gather children once everyone is settled and announce this week's focus</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>2 · Show &amp; Tell</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Gather all children in a circle</li>
+                <li>Needs-prep: child shows the raw ingredient whole</li>
+                <li>Ready-to-eat: child shows the raw ingredient alongside the finished dish</li>
+                <li>Pass each item around. Touch it, smell it.</li>
+                <li>Ask: "What is it? Where does it come from? Has anyone had this before?"</li>
+                <li>After presenting: needs-prep items go to prep table, ready-to-eat items to dining table</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>3 · Prepare together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Children move to their phase's prep table</li>
+                <li>Phase 1 (ages 2–4): wash produce, tear vegetables, arrange items on a plate</li>
+                <li>Phase 2 (ages 4–7): peel soft vegetables, spread, mix, juice citrus</li>
+                <li>Phase 3 (ages 7–12): chop with a table knife, follow a simple recipe, boil with supervision</li>
+                <li>Phase 4 (ages 12–18): lead a dish or station independently</li>
+                <li>Ready-to-eat items are already on the dining table. No prep needed.</li>
+                <li>Adults step back. Correct for safety only, not messiness or imperfect results</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>4 · Eat together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Everyone eats at the same dining table, children and adults together</li>
+                <li>No coaxing, no "just one bite"</li>
+                <li>Adults try things first and describe what they notice</li>
+                <li>Keep conversation warm and social</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>5 · Reflect</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Ask: "What was something you noticed today?"</li>
+                <li>Go around the table. Every child answers.</li>
+                <li>Toddlers point. Older children give a sentence. No wrong answers.</li>
+              </ul>
+            </span></span></li>
           </ul>
         </div>
       </div>
       <div style="margin-top:1.5rem;">
         <h3 style="font-size:1rem; margin-bottom:1rem;">Facilitator prompts by age group</h3>
         <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"What color is that?"</li><li>"Can you smell it?"</li><li>"Is it bumpy or smooth?"</li><li>"Can you touch it with one finger?"</li><li>"Is it bigger or smaller than your hand?"</li></ul></div></div>
-          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"Which one smells the strongest?"</li><li>"Why did you pick this food?"</li><li>"What does it remind you of?"</li><li>"Can you find two foods the same color?"</li></ul></div></div>
+          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"What color is that?"</li><li>"Can you smell it?"</li><li>"Is it bumpy or smooth?"</li><li>"Can you touch it with one finger?"</li></ul></div></div>
+          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"Why did you pick this food?"</li><li>"Which one smells the strongest?"</li><li>"Can you find two foods the same color?"</li><li>"What does it remind you of?"</li></ul></div></div>
           <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"Where do you think this grows?"</li><li>"How would you describe this to someone who's never seen it?"</li><li>"What do you think it tastes like before you try it?"</li></ul></div></div>
-          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Why do you think we don't eat this more often?"</li><li>"If you were making a dish with this, what would you pair it with?"</li><li>"What did you have to do to find or get this food?"</li></ul></div></div>
+          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"If you were making a dish with this, what would you pair it with?"</li><li>"Why do you think we don't eat this more often?"</li><li>"What did you have to do to find this food?"</li></ul></div></div>
         </div>
       </div>
     </div>
 
     <div id="s2" class="session-content">
       <div class="session-card">
-        <div class="session-header"><h3>Week 2: Provenance</h3><span>Where does your food come from?</span></div>
+        <div class="session-header"><h3>Week 2: Make something</h3><span>Focus on a skill, not just a task</span></div>
         <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Find out where your food comes from."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Find out one thing about where your food comes from.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Research how your food is grown or made and who produces it before arriving.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">Children bring any food they like but investigate its origin before the gathering. Where is it grown? How does it get to a store? Younger children can ask a parent or look at the label. Older children can research the supply chain, seasonality, or farming method. The investigation is the point, not the food itself.</p>
+          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This week each child picks a kitchen skill they haven't tried before and works on it during prep. It doesn't have to be impressive, using a peeler for the first time counts. The point is that children leave having learned something specific they can name.</p>
           <ul class="activity-list">
-            <li><span><strong>Arrive and set up</strong><span class="activity-detail">Families unpack raw ingredients and tools. Facilitator announces the session challenge. Ask each child: "How did you pick your item? Was it hard to choose?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave (raw items)</strong><span class="activity-detail">Each child presents their raw ingredient while still whole and shares what they found out about its origin. Prompt: "Where does this come from? How does it get to a store? Did anything surprise you when you were researching it?"</span></span></li>
-            <li><span><strong>Prep together</strong><span class="activity-detail">Children prep their items. The challenge stays active: as children work, connect what they learned about origin to what they're handling. "You said this grows underground, can you feel that in the texture?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table alongside the raw ingredient. The child shares what they found out about where it comes from and what it took to get it here.</span></span></li>
-            <li><span><strong>Eat together</strong><span class="activity-detail">Continue the conversation about choices: what went well, what tasted different than expected.</span></span></li>
-            <li><span><strong>Reflection</strong><span class="activity-detail">"What was the most surprising thing you found out about your food this week?"</span></span></li>
+            <li><span><strong>1 · Arrive and set up</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Set up one prep table per skill phase represented, not one per family</li>
+                <li>Each table gets cutting boards, age-appropriate knives, a scrap bowl, and paper towels</li>
+                <li>Make sure any tools specific to this week's skills are at the right table (peelers at Phase 2, chef's knives at Phase 4)</li>
+                <li>Small children (Phase 1) at a low surface or coffee table</li>
+                <li>Ready-to-eat families: dish on dining table, raw ingredient out for Show &amp; Tell</li>
+                <li>Needs-prep families: go to their phase's prep table</li>
+                <li>As families arrive, ask each child: "What's one thing you're going to try making today?"</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>2 · Show &amp; Tell</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Gather all children together in a circle</li>
+                <li>Each child presents their item whole, needs-prep children show the raw ingredient, ready-to-eat children show raw ingredient alongside finished dish</li>
+                <li>Pass each item around: touch it, smell it</li>
+                <li>After presenting the item, ask each child: "What skill are you planning to work on today?"</li>
+                <li>After presenting: needs-prep items go to the prep table, ready-to-eat items stay on the dining table</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>3 · Prepare together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Children work at the prep table for their phase</li>
+                <li>Phase 1 (ages 2–4): try tearing or washing. Name what they're doing as they go.</li>
+                <li>Phase 2 (ages 4–7): use a peeler or squeeze citrus for the first time</li>
+                <li>Phase 3 (ages 7–12): work on knife technique or make a dressing from scratch</li>
+                <li>Phase 4 (ages 12–18): reduce a sauce, make an emulsion, or lead a full dish independently</li>
+                <li>Adults demonstrate once, then step back completely</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>4 · Eat together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Everyone sits at the same dining table, children and adults together</li>
+                <li>Acknowledge what each child made: "You made that dressing. How does it taste?"</li>
+                <li>No coaxing, no pressure. Adults try things first.</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>5 · Reflect</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Ask: "What's one thing you made today that you want to try again at home?"</li>
+                <li>Go around the table. Every child answers.</li>
+                <li>Toddlers can point or show. Older children give a sentence.</li>
+              </ul>
+            </span></span></li>
           </ul>
         </div>
       </div>
       <div style="margin-top:1.5rem;">
         <h3 style="font-size:1rem; margin-bottom:1rem;">Facilitator prompts by age group</h3>
         <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Did you pick this all by yourself?"</li><li>"Show me your food!"</li><li>"Is it heavy or light?"</li><li>"Can you find the same color on your plate?"</li></ul></div></div>
-          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"Why did you choose this one and not another?"</li><li>"What do you think is inside it?"</li><li>"Was it easy or hard to decide?"</li></ul></div></div>
-          <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"What made you curious about this food?"</li><li>"What would you do with it if you were cooking dinner?"</li><li>"Did you look anything up before picking it?"</li></ul></div></div>
-          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Did you think about nutrition when you chose it?"</li><li>"How much did it cost? Would you buy it again?"</li><li>"What would you pair it with to make a full meal?"</li></ul></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div id="s3" class="session-content">
-      <div class="session-card">
-        <div class="session-header"><h3>Week 3: Technique</h3><span>Learn one skill you've never tried</span></div>
-        <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Learn and demonstrate one skill you've never done before."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Try using a peeler or squeezing citrus for the first time.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Learn a specific technique, like a knife skill, making an emulsion, or reducing a sauce, and show someone else how it works.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">The focus this week is the skill itself, not just completing a task. Each child picks a technique at the edge of their current ability and works on it during prep. Children leave this session having learned something specific and nameable. Parents should resist stepping in before the child has had a genuine attempt.</p>
-          <ul class="activity-list">
-            <li><span><strong>Arrive and set up</strong><span class="activity-detail">Families unpack raw ingredients and tools. Facilitator announces the session challenge. Each child confirms their prep task. Ask as they settle in: "What are you making today?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave (raw items)</strong><span class="activity-detail">Each child presents their raw ingredient while still whole, and explains what they're about to do with it. The challenge is active: "What's your one step today?" Older children can briefly demonstrate a technique.</span></span></li>
-            <li><span><strong>Prep together</strong><span class="activity-detail">Children complete their prep tasks. The challenge stays active throughout: each child owns their step without being prompted. Emphasize independence over perfection.</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table. The child describes what they did to make it and what the raw ingredients looked like. Prompt: "What was the hardest part?"</span></span></li>
-            <li><span><strong>Eat together</strong><span class="activity-detail">Celebrate what everyone made. Emphasize effort over result. "I see you worked hard on this" goes further than "good job."</span></span></li>
-            <li><span><strong>Reflection</strong><span class="activity-detail">"What was one thing you made today that you want to try making again at home?"</span></span></li>
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top:1.5rem;">
-        <h3 style="font-size:1rem; margin-bottom:1rem;">Facilitator prompts by age group</h3>
-        <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Can you tear this into small pieces?"</li><li>"Can you stir this for me?"</li><li>"What does it feel like when you squish it?"</li><li>"You made that! How does it feel?"</li></ul></div></div>
+          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Can you tear this into small pieces?"</li><li>"Can you stir this for me?"</li><li>"You made that! How does it feel?"</li></ul></div></div>
           <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"What job did you have in the kitchen?"</li><li>"Did it look different after you made it?"</li><li>"Would you want to do a bigger job next time?"</li></ul></div></div>
           <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"Did anything go differently than you expected?"</li><li>"What would you do differently next time?"</li><li>"What did you have to figure out on your own?"</li></ul></div></div>
           <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Did you follow a recipe or improvise?"</li><li>"What would make this better?"</li><li>"Could you teach someone else how to make this?"</li></ul></div></div>
@@ -534,126 +571,439 @@ footer p { color: white; }
       </div>
     </div>
 
-    <div id="s4" class="session-content">
+    <div id="s3" class="session-content">
       <div class="session-card">
-        <div class="session-header"><h3>Week 4: Connection</h3><span>Food as memory and identity</span></div>
+        <div class="session-header"><h3>Week 3: Plan the next round</h3><span>Children decide what comes next</span></div>
         <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Tell the story."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Show who in your family makes this food.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Connect your food to a specific memory or family tradition and share it with the group.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This session deepens the social and emotional layer of the gathering. Food is identity. Children who understand that their food has a story become more curious about the foods of others and develop a stronger connection to the foods they love.</p>
+          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This week runs the same as the others, with one addition at the end: children decide the menu for the next round. Older children can propose a full plan. Younger children pick one food they want the group to try. This hands ownership of the program to the children themselves.</p>
           <ul class="activity-list">
-            <li><span><strong>Arrive and set up</strong><span class="activity-detail">Families unpack raw ingredients and tools. Facilitator announces the session challenge. Ask as they settle in: "Is there a story that goes with your food?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave (raw items)</strong><span class="activity-detail">Each child presents their raw ingredient while still whole and shares the story behind it. The raw ingredient is often the most culturally interesting thing to examine. Where does it come from? Who used to cook with it?</span></span></li>
-            <li><span><strong>Prep together</strong><span class="activity-detail">Children prep their ingredients. The challenge stays active: as each dish comes together, invite the group to explore it: smell, texture, color. The child who brought it guides: "This is how we usually eat it."</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table. Each child leads the full story: what it is, who makes it in their family, and what it means to bring it today. Hold space and don't rush.</span></span></li>
-            <li><span><strong>Eat together, intentionally slow</strong><span class="activity-detail">This session's meal should feel the most like a real family dinner. Put phones away. Keep the conversation going about the stories shared.</span></span></li>
-            <li><span><strong>Reflection</strong><span class="activity-detail">"What food story did you hear today that you want to remember?"</span></span></li>
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top:1.5rem;">
-        <h3 style="font-size:1rem; margin-bottom:1rem;">Facilitator prompts by age group</h3>
-        <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Does this smell like home?"</li><li>"Who makes this for you?"</li><li>"Is this your favorite?"</li></ul></div></div>
-          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"When do you usually eat this?"</li><li>"Who taught you about this food?"</li><li>"Does it taste the same every time?"</li></ul></div></div>
-          <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"What would it mean to your family if this food disappeared?"</li><li>"What's the story behind this dish?"</li><li>"Is the recipe written down, or passed down by watching?"</li></ul></div></div>
-          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Do you think food can be part of your identity?"</li><li>"What foods do you think you'll still eat in 20 years?"</li><li>"Is there a family food tradition you want to keep going?"</li></ul></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div id="s5" class="session-content">
-      <div class="session-card">
-        <div class="session-header"><h3>Week 5: Health Awareness</h3><span>Curiosity about what food does, not what it is</span></div>
-        <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Know what it does."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Name one thing this food does for your body.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Explain the difference between your two foods and when you would choose each one.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This session introduces age-appropriate nutrition concepts without moralizing. The goal is curiosity about what food does, not good/bad labeling. Avoid language like "junk food" or "unhealthy." Frame everything as "what does your body feel like after you eat this?" Families bring two foods: one for energy, one for comfort.</p>
-          <ul class="activity-list">
-            <li><span><strong>Arrive and set up</strong><span class="activity-detail">Families unpack their two foods and tools. Facilitator announces the session challenge. Ask each child: "Which of your two foods is your energy food and which is your comfort food?"</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave (raw items)</strong><span class="activity-detail">Each child presents both raw items while still whole and explains the pairing logic. The challenge is active throughout: "How do you know which one gives you energy?"</span></span></li>
-            <li><span><strong>Prep together</strong><span class="activity-detail">Children prep both items. The challenge stays active: as children work, facilitators ask age-appropriate questions connecting the food to what the body does with it.</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table alongside the raw component, with a brief explanation of which category it falls into and why.</span></span></li>
-            <li><span><strong>Eat together</strong><span class="activity-detail">Keep conversation going with a light, curious tone: "How do you think you'll feel in an hour?" No pressure, no judgment.</span></span></li>
-            <li><span><strong>Reflection</strong><span class="activity-detail">"What's one thing you learned today about how food makes you feel?"</span></span></li>
-          </ul>
-        </div>
-      </div>
-      <div style="margin-top:1.5rem;">
-        <h3 style="font-size:1rem; margin-bottom:1rem;">Facilitator prompts by age group</h3>
-        <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Does this make you feel strong?"</li><li>"What does your tummy feel like after you eat this?"</li><li>"Is this crunchy or soft?"</li></ul></div></div>
-          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"Which food do you think gives you more energy?"</li><li>"What do you eat before you play outside?"</li><li>"Does the color tell you anything about what's in it?"</li></ul></div></div>
-          <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"What does this food give your body, like protein, carbs, or fiber?"</li><li>"How long do you think you'd feel full after eating this?"</li><li>"When would be a good time to eat this?"</li></ul></div></div>
-          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Have you ever changed what you eat based on how you want to feel?"</li><li>"Do you think about nutrition when you choose what to eat, or mostly taste?"</li><li>"What would a good pre-practice meal look like for you?"</li></ul></div></div>
-        </div>
-      </div>
-    </div>
-
-    <div id="s6" class="session-content">
-      <div class="session-card">
-        <div class="session-header"><h3>Week 6: Planning</h3><span>Children design what comes next</span></div>
-        <div class="session-body">
-          <p style="font-size:0.88rem; margin-bottom:0.5rem;"><strong>Session challenge:</strong> "Design the next cycle."</p>
-          <div style="display:grid; grid-template-columns:1fr 1fr; gap:0.5rem; margin-bottom:1rem;">
-            <div style="font-size:0.82rem; background:var(--green-pale); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 2 to 7:</strong> Pick one food you want the group to try next time.</div>
-            <div style="font-size:0.82rem; background:var(--orange-light); border-radius:6px; padding:0.5rem 0.75rem;"><strong>Ages 7 to 18:</strong> Propose a full theme for the next gathering, including what to bring and what challenge to use.</div>
-          </div>
-          <p style="font-size:0.88rem; color:var(--text-light); margin-bottom:1rem;">This is the capstone session. Older children run the gathering and also design what comes next: the themes, the food categories, the challenges. The facilitation role is part of it but the planning ownership is what makes this week distinct. Children leave having built the next cycle themselves.</p>
-          <ul class="activity-list">
-            <li><span><strong>Child-led welcome and setup</strong><span class="activity-detail">An older child (12 and up) opens the gathering, announces the session challenge, and confirms each child's prep task. Younger children watch and see what leading looks like.</span></span></li>
-            <li><span><strong>Show &amp; Tell: first wave — child facilitates (raw items)</strong><span class="activity-detail">The older child runs the Show &amp; Tell for raw items. They ask the questions. The challenge is active: each child's presentation should connect to what they are leading or contributing today.</span></span></li>
-            <li><span><strong>Child-led prep</strong><span class="activity-detail">Older children take full responsibility for a preparation task: leading a dish, teaching a technique to a younger child, or managing the shared workspace. Adults step back entirely.</span></span></li>
-            <li><span><strong>Show &amp; Tell: second wave — child facilitates (bring-and-share dishes)</strong><span class="activity-detail">Pre-cooked dishes presented at the table. The child facilitator continues running the questions. Table is set and the meal is ready.</span></span></li>
-            <li><span><strong>Eat together</strong><span class="activity-detail">Celebrate the 6 sessions. Acknowledge what everyone has tried and made over the whole cycle. Keep the tone warm and proud.</span></span></li>
-            <li><span><strong>Design the next cycle</strong><span class="activity-detail">Each child proposes a theme, food category, and challenge for the next round. Older children present a full plan. Younger children name one food they want the group to try. Vote as a group and confirm the next cycle's lineup before families leave.</span></span></li>
+            <li><span><strong>1 · Arrive and set up</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Same setup as previous weeks: one prep table per phase present</li>
+                <li>If an older child is taking the host role: brief them before families arrive on how to open and run Show &amp; Tell</li>
+                <li>Introduce the teen host to arriving families as the host, not a helper</li>
+                <li>Ready-to-eat families: dish on dining table, raw ingredient out for Show &amp; Tell</li>
+                <li>Needs-prep families: go to their phase's prep table</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>2 · Show &amp; Tell</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Gather all children in a circle</li>
+                <li>Needs-prep: child shows the raw ingredient whole</li>
+                <li>Ready-to-eat: child shows raw ingredient alongside finished dish</li>
+                <li>Pass each item around. Touch it, smell it.</li>
+                <li>Ask: "What is it? Has anyone had this before? What does it remind you of?"</li>
+                <li>After presenting: needs-prep items go to prep table, ready-to-eat items to dining table</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>3 · Prepare together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Children move to their phase's prep table</li>
+                <li>Phase 1 (ages 2–4): wash, tear, arrange</li>
+                <li>Phase 2 (ages 4–7): peel, spread, mix, juice citrus</li>
+                <li>Phase 3 (ages 7–12): chop, follow a recipe, boil with supervision</li>
+                <li>Phase 4 (ages 12–18): lead a dish or station entirely. Adults step back completely.</li>
+                <li>Older children can take full ownership of running their phase's table this week</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>4 · Eat together</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Everyone eats at the same dining table, children and adults together</li>
+                <li>Celebrate the cycle: acknowledge what everyone has tried and made across all three sessions</li>
+                <li>No coaxing, no pressure. Adults model curiosity.</li>
+              </ul>
+            </span></span></li>
+            <li><span><strong>5 · Reflect and plan the next round</strong><span class="activity-detail">
+              <ul style="margin-top:0.4rem; padding-left:1.2rem; line-height:2;">
+                <li>Ask: "What do you want to cook or try next time?"</li>
+                <li>Go around the table. Every child answers.</li>
+                <li>Younger children name one food they want to try</li>
+                <li>Older children can propose a full menu or focus for the next round</li>
+                <li>Confirm the next round's plan before families leave</li>
+              </ul>
+            </span></span></li>
           </ul>
         </div>
       </div>
       <div style="margin-top:1.5rem;">
         <div class="callout callout-orange">
-          <strong>For adolescents in this session:</strong> Teens are encouraged to take the facilitator role. Those who take the role should be introduced as the host, not as a helper, to build ownership.
+          <strong>For adolescents in this session:</strong> Teens are encouraged to take the host role. Introduce them as the host, not as a helper. Let them run the Show &amp; Tell and open the reflection. Even if it's imperfect, their ownership of the moment matters more than a smooth session.
         </div>
         <h3 style="font-size:1rem; margin: 1.5rem 0 1rem;">Facilitator prompts by age group</h3>
         <div class="prompts-grid">
-          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"Can you help put the food on the table?"</li><li>"What do you want to eat first?"</li><li>"What was your favorite food we tried?"</li></ul></div></div>
-          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"What food would you pick for next time?"</li><li>"What was the most surprising thing you tasted?"</li><li>"Did you try anything new that you liked?"</li></ul></div></div>
-          <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"What did you learn about food over these six sessions?"</li><li>"Is there something you want to cook at home now?"</li><li>"What theme should we do next round?"</li></ul></div></div>
-          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"What would you do differently if you were designing this gathering?"</li><li>"Has anything changed about how you think about food?"</li><li>"Would you be interested in leading a session next cycle?"</li></ul></div></div>
+          <div class="prompt-card pt-toddler"><div class="prompt-header">Phase 1 · Ages 2 to 4</div><div class="prompt-body"><ul><li>"What was your favorite food we tried?"</li><li>"What food would you pick for next time?"</li><li>"Can you help put the food on the table?"</li></ul></div></div>
+          <div class="prompt-card pt-early"><div class="prompt-header">Phase 2 · Ages 4 to 7</div><div class="prompt-body"><ul><li>"What was the most surprising thing you tasted?"</li><li>"Did you try anything new that you liked?"</li><li>"What should we make next time?"</li></ul></div></div>
+          <div class="prompt-card pt-middle"><div class="prompt-header">Phase 3 · Ages 7 to 12</div><div class="prompt-body"><ul><li>"Is there something you want to cook at home now?"</li><li>"What would you do differently next round?"</li><li>"What food do you want to learn how to make?"</li></ul></div></div>
+          <div class="prompt-card pt-tween"><div class="prompt-header">Phase 4 · Ages 12 to 18</div><div class="prompt-body"><ul><li>"Has anything changed about how you think about food?"</li><li>"What theme should we do next round?"</li><li>"Would you want to plan the next menu yourself?"</li></ul></div></div>
         </div>
+      </div>
+    </div>
+  </section>
+
+</div>
+
+<!-- HOST -->
+<div id="page-host" class="page">
+  <section>
+    <h2>How to run your first gathering</h2>
+    <p class="lead">You don't need to be an experienced cook or have a big kitchen. Here's everything you need to get the first session off the ground.</p>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">Step 1: Invite 2 to 4 families</h3>
+    <p style="margin-bottom:1rem;">Start small. Two or three families is enough for the peer effect to work and keeps the logistics manageable. Reach out with something like this:</p>
+    <div class="callout" style="margin-bottom:2rem; font-style:italic; font-size:0.9rem;">
+      "Hey, we're starting a monthly food gathering for the kids. Each family brings one ingredient or dish, the kids show and tell what they brought, and then we prep and eat together. First one is at our place. Can you come? Just bring something your kid chose: a vegetable, a fruit, anything they picked themselves."
+    </div>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">Step 2: Agree on a starter menu</h3>
+    <p style="margin-bottom:1rem;">Before the first session, suggest a simple menu that every family can contribute to. When confirming, each family flags their item as <strong>needs-prep</strong> (raw, prepared at the gathering) or <strong>ready-to-eat</strong> (cooked at home, bring the raw ingredient alongside for Show &amp; Tell). A few menus that work well:</p>
+
+    <div style="display:grid; grid-template-columns: repeat(auto-fit, minmax(260px,1fr)); gap:1rem; margin-bottom:2rem;">
+      <div class="card">
+        <h3 style="font-size:0.95rem; margin-bottom:0.5rem;">&#x1F357; Chicken and cucumber salad</h3>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">One family brings a rotisserie chicken to shred together. Another brings cucumbers to slice. A third makes a simple sesame oil and rice vinegar dressing. Easy for every age, cucumbers cut well even with a children's knife.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:0.95rem; margin-bottom:0.5rem;">&#x1F35A; Rice bowl with toppings</h3>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">One family brings cooked rice (ready-to-eat). Others bring toppings to prep on the spot: sliced avocado, shredded carrots, edamame, cucumber. Each child assembles their own bowl.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:0.95rem; margin-bottom:0.5rem;">&#x1F9C6; Flatbread with toppings</h3>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">One family brings flatbreads (ready-to-eat). Others bring toppings: hummus, sliced tomatoes, cucumber, herbs. Children spread and assemble their own. No cooking needed, great for a first session.</p>
+      </div>
+      <div class="card">
+        <h3 style="font-size:0.95rem; margin-bottom:0.5rem;">&#x1F34C; Banana and yogurt bowls</h3>
+        <p style="font-size:0.85rem; margin-bottom:0.5rem;">Children slice bananas, spoon yogurt, and add toppings like granola, honey, or fresh berries. Even a two-year-old can do this with a butter knife. Great as a snack gathering for first-timers.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-orange" style="margin-bottom:2rem;">
+      <strong>A few ingredient notes:</strong> Cucumbers are easy to cut, great for younger children. Carrots are hard and can be frustrating. Onions make everyone cry. Skip them for the first session. If someone insists on onions, tell them to bring swim goggles. It sounds silly and it works, and the kids love it.
+    </div>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">Step 3: Set up before families arrive</h3>
+    <p style="margin-bottom:1rem;">Set up one prep table per skill phase represented at the gathering, not one per family. Check with families in advance to know which phases are coming.</p>
+
+    <div style="overflow-x:auto; margin-bottom:1.5rem;">
+      <table class="tasks-table">
+        <thead>
+          <tr><th>Area</th><th>What you need</th><th>Notes</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td style="white-space:nowrap;"><strong>Prep tables</strong><br><span style="font-size:0.78rem; color:var(--text-light);">One per phase present</span></td>
+            <td>
+              <ul style="padding-left:1.1rem; margin:0; line-height:2;">
+                <li>1 cutting board per child at the table</li>
+                <li>1 knife per child, matched to phase (butter knife for Phase 1–2, table knife for Phase 3, chef's knife for Phase 4)</li>
+                <li>1 small bowl per table for scraps</li>
+                <li>Paper towels within reach</li>
+                <li>Peeler (Phase 2+)</li>
+                <li>Scissors for herbs or packaging (Phase 2+)</li>
+                <li>Measuring cups and spoons (Phase 2+)</li>
+                <li>Grater (Phase 3+)</li>
+                <li>Can opener (Phase 3+)</li>
+              </ul>
+            </td>
+            <td style="font-size:0.83rem; color:var(--text-light);">Only set out tools relevant to the phases attending. Phase 1 children can work at a low coffee table or bar stool height if counter space is limited.</td>
+          </tr>
+          <tr>
+            <td style="white-space:nowrap;"><strong>Cooking area</strong><br><span style="font-size:0.78rem; color:var(--text-light);">Phase 3–4 only</span></td>
+            <td>
+              <ul style="padding-left:1.1rem; margin:0; line-height:2;">
+                <li>Stove with available burners (1 per dish being cooked)</li>
+                <li>Saucepan or pot for boiling</li>
+                <li>Frying pan or skillet if sautéing</li>
+                <li>Wooden spoon or silicone spatula per pot</li>
+                <li>Oven mitts</li>
+                <li>Trivet or heatproof mat for resting hot pots</li>
+                <li>Timer (phone is fine)</li>
+              </ul>
+            </td>
+            <td style="font-size:0.83rem; color:var(--text-light);">Only needed if Phase 3 or 4 children are attending and their items require cooking. Skip entirely for Phase 1–2-only gatherings.</td>
+          </tr>
+          <tr>
+            <td style="white-space:nowrap;"><strong>Mixing and assembly</strong><br><span style="font-size:0.78rem; color:var(--text-light);">All phases</span></td>
+            <td>
+              <ul style="padding-left:1.1rem; margin:0; line-height:2;">
+                <li>Mixing bowls (1 large, 2–3 medium)</li>
+                <li>Salad tongs or large spoons for tossing</li>
+                <li>Ladle if serving soup or sauce</li>
+                <li>Colander for draining or rinsing</li>
+                <li>Vegetable brush for scrubbing produce</li>
+              </ul>
+            </td>
+            <td style="font-size:0.83rem; color:var(--text-light);">Keep these on a central surface all phases can access. Not every item will be needed every session, set out what matches the confirmed menu.</td>
+          </tr>
+          <tr>
+            <td style="white-space:nowrap;"><strong>Dining table</strong><br><span style="font-size:0.78rem; color:var(--text-light);">All phases</span></td>
+            <td>
+              <ul style="padding-left:1.1rem; margin:0; line-height:2;">
+                <li>1 plate per person</li>
+                <li>Fork, knife, and spoon per person</li>
+                <li>Napkins</li>
+                <li>Serving spoons for each shared dish</li>
+                <li>Serving bowls or platters for assembled dishes</li>
+                <li>Cups and a water jug</li>
+                <li>Space for ready-to-eat dishes alongside their raw ingredients</li>
+                <li>Seats for every child and adult</li>
+              </ul>
+            </td>
+            <td style="font-size:0.83rem; color:var(--text-light);">Set this up before families arrive so the table is ready when prep finishes. Children and adults eat together, no separate kids' table.</td>
+          </tr>
+          <tr>
+            <td style="white-space:nowrap;"><strong>Cleaning</strong><br><span style="font-size:0.78rem; color:var(--text-light);">Throughout</span></td>
+            <td>
+              <ul style="padding-left:1.1rem; margin:0; line-height:2;">
+                <li>Paper towels at every prep table</li>
+                <li>Dish soap and sponge at the sink</li>
+                <li>Bin or compost bowl for scraps at each table</li>
+                <li>Damp cloth for wiping surfaces mid-session</li>
+              </ul>
+            </td>
+            <td style="font-size:0.83rem; color:var(--text-light);">Expect mess. A quick wipe between Show &amp; Tell and prep keeps things manageable without stopping the flow.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="photo-placeholder" style="height:220px; width:100%;">
+      <span>📷 Photo: your kitchen setup showing phase-based prep tables</span>
+      <span class="ph-dims">900 × 500 px</span>
+    </div>
+    <div class="photo-placeholder" style="height:220px; width:100%;">
+      <span>📷 Photo: a child working at a prep station</span>
+      <span class="ph-dims">900 × 500 px</span>
+    </div>
+    <div class="photo-placeholder" style="height:220px; width:100%;">
+      <span>📷 Photo: everyone eating at the table together</span>
+      <span class="ph-dims">900 × 500 px</span>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>Checklist and kitchen tasks</h2>
+    <p style="margin-bottom:0.5rem;">The <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">Resources page</a> has two tools to use before each gathering:</p>
+    <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.4rem; line-height:2.2; margin-top:0.5rem;">
+      <li><strong>Facilitator checklist</strong>: a printable before/during/after checklist to run through before families arrive</li>
+      <li><strong>Kitchen tasks by phase</strong>: example tasks and notes for each skill phase so you know what to assign each child at their prep table</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>Between and after cycles</h2>
+    <p style="margin-bottom:1.5rem;">The gathering structure runs itself once families know the rhythm. What keeps the group going long-term is what happens between sessions.</p>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">Between sessions</h3>
+    <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.4rem; line-height:2.2; margin-bottom:1.5rem;">
+      <li>Send a short message after each session confirming the next date and what each family is bringing</li>
+      <li>Remind families of the week's focus a day or two before. A text is enough.</li>
+      <li>Encourage families to try something from the last session at home and bring back what happened</li>
+      <li>If a family misses a session, reach out. Consistency is the most important factor and an early gap can become a permanent one.</li>
+    </ul>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">After a 3-week cycle</h3>
+    <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.4rem; line-height:2.2; margin-bottom:1.5rem;">
+      <li>In Week 3, children propose the next cycle's menu. Confirm this before families leave so there's a concrete plan.</li>
+      <li>Take a 1 to 2 week break if needed, but set the next date before the current cycle ends</li>
+      <li>Rotate who hosts. The program works in any home and sharing the role distributes the effort and keeps things fresh.</li>
+      <li>Over time, ask an older child or teen to take on more of the planning role, not just the facilitation role</li>
+    </ul>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">If the group loses momentum</h3>
+    <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.4rem; line-height:2.2; margin-bottom:1.5rem;">
+      <li>Start smaller. One other family is enough to keep the structure alive.</li>
+      <li>Simplify the menu until the rhythm is re-established</li>
+      <li>Let children re-propose the focus. Their ownership of the program is what sustains it.</li>
+    </ul>
+
+    <div class="callout">
+      The program running for 10 rounds with 3 families consistently is more valuable than 1 round with 10 families. Consistency over scale.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>FAQ for hosts</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How many families should I invite?</div>
+        <div class="faq-a">Aim for enough to have 4 to 10 children total. That's enough to create the peer effect that makes social learning work, while keeping the group small enough that each child gets meaningful attention. 2 to 4 families is a good starting point.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">How often should we gather?</div>
+        <div class="faq-a">Once a week to once a month works well. Frequent enough to build routine and familiarity, infrequent enough to stay manageable. A 3-session cycle can span 6 weeks to 3 months depending on your group's schedules.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">Do we need to follow the 3 sessions in order?</div>
+        <div class="faq-a">The order is designed to build: Week 1 establishes comfort, Week 2 adds skill, Week 3 hands ownership to children. That said, the program is flexible. Repeating a week or taking a break is fine. The most important thing is showing up consistently.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What if I don't have enough counter space?</div>
+        <div class="faq-a">You don't need a large kitchen. Phase 1 children work at a coffee table. Phase 2 children can use a dining table. Only Phase 3 and 4 need counter height surfaces. Spread across whatever surfaces you have. It doesn't need to be tidy.</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q" onclick="toggleFaq(this)">What if one family consistently doesn't show up?</div>
+        <div class="faq-a">Run the session anyway. The program works with as few as two families. If a family repeatedly drops out, talk to them directly. Find out whether the time, location, or format isn't working and adjust if you can. A smaller committed group is better than a larger inconsistent one.</div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<!-- PARTICIPANTS -->
+<div id="page-participants" class="page">
+  <section>
+    <h2>Getting ready to come</h2>
+    <p class="lead">Everything a participating family needs to know: before you arrive, what to expect at the gathering, and how to support your child without taking over.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>What to prepare</h2>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem; margin-top:1.5rem;">Pick your item</h3>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-bottom:1.5rem;">
+      <div class="card">
+        <div class="card-icon">&#x1F9C4;</div>
+        <h3 style="font-size:0.95rem;">Needs-prep</h3>
+        <p style="font-size:0.85rem;">A raw ingredient your child chose. It will be prepped at the gathering. Bring it whole and uncut, your child will present it during Show &amp; Tell before anything is prepared.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F372;</div>
+        <h3 style="font-size:0.95rem;">Ready-to-eat</h3>
+        <p style="font-size:0.85rem;">A dish cooked at home because it takes too long to prepare on the spot. Always bring the key raw ingredient alongside so your child has something whole to present at Show &amp; Tell. Hot dishes and soups: place directly on the dining table, do not hand these to young children.</p>
+      </div>
+    </div>
+
+    <div class="callout callout-orange" style="margin-bottom:1.5rem;">
+      <strong>If you're bringing onions or anything that makes eyes water:</strong> Bring swim goggles for your children. It turns a frustrating moment into a memorable one, and the kids love it.
+    </div>
+
+    <h3 style="font-size:1.05rem; margin-bottom:0.75rem;">Tell the host in advance</h3>
+    <ul style="font-size:0.9rem; color:var(--text-mid); padding-left:1.4rem; line-height:2.2; margin-bottom:1.5rem;">
+      <li>What you're bringing and whether it's needs-prep or ready-to-eat</li>
+      <li>Any dietary restrictions or allergies for your family</li>
+      <li>Your child's skill phase, the host uses this to set up the right prep tables. Use the <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">skill-based level finder</a> on the Resources page if you're not sure.</li>
+    </ul>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>What to expect</h2>
+
+    <div style="display:grid; grid-template-columns:repeat(auto-fit, minmax(220px,1fr)); gap:1rem; margin-top:1.5rem; margin-bottom:2rem;">
+      <div class="card">
+        <div class="card-icon">&#x1F4E3;</div>
+        <h3 style="font-size:0.95rem;">Show &amp; Tell</h3>
+        <p style="font-size:0.85rem;">All children gather in a circle. Each child presents their item, raw and whole. It gets passed around to touch and smell. Encourage your child to think about what they want to say on the way over.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F52A;</div>
+        <h3 style="font-size:0.95rem;">Prepare together</h3>
+        <p style="font-size:0.85rem;">Children work at phase-based prep tables, not family-based stations. Your child will be with others at the same skill level. See the <a href="#" onclick="showPage('resources')" style="color:var(--green-mid);">kitchen tasks table</a> on Resources for what each phase does.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F37D;&#xFE0F;</div>
+        <h3 style="font-size:0.95rem;">Eat together</h3>
+        <p style="font-size:0.85rem;">Everyone eats at the same table, children and adults. No pressure to taste anything. Adults try things first and describe what they notice.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F4AD;</div>
+        <h3 style="font-size:0.95rem;">Reflect</h3>
+        <p style="font-size:0.85rem;">One question goes around the table at the end: "What was something you noticed today?" Toddlers point. Older children give a sentence. No wrong answers.</p>
       </div>
     </div>
   </section>
 
   <hr class="divider">
 
-  <section>
-    <div class="section-label">6-week overview</div>
-    <h2>The full arc at a glance</h2>
-    <p class="lead">A suggested progression for a family group over 6 gatherings. Themes build on each other as children's confidence grows from session to session.</p>
-    <div style="overflow-x: auto;">
-      <table class="week-table">
-        <thead><tr><th>Session</th><th>Theme</th><th>Session challenge</th><th>Parent role</th><th>Key outcome</th></tr></thead>
-        <tbody>
-          <tr><td class="week-label">Week 1</td><td>Exploration</td><td><strong>Find something surprising</strong><br><span class="week-label">2–7: find a food that feels strange to touch · 7–18: find an ingredient never cooked with</span></td><td>High support, model enthusiasm</td><td>Comfort with new foods</td></tr>
-          <tr><td class="week-label">Week 2</td><td>Provenance</td><td><strong>Find out where it comes from</strong><br><span class="week-label">2–7: find out one thing about where it comes from · 7–18: research how it's grown or made</span></td><td>Help with research, then step back</td><td>Curiosity about food origins</td></tr>
-          <tr><td class="week-label">Week 3</td><td>Technique</td><td><strong>Learn one new skill</strong><br><span class="week-label">2–7: peeler or citrus for the first time · 7–18: knife skill, emulsion, or reduction</span></td><td>Demonstrate once, then step back</td><td>A specific skill learned and named</td></tr>
-          <tr><td class="week-label">Week 4</td><td>Connection</td><td><strong>Tell the story</strong><br><span class="week-label">2–7: show who in your family makes this food · 7–18: connect to a memory or tradition</span></td><td>Share your own food story, model openness</td><td>Food as identity and memory</td></tr>
-          <tr><td class="week-label">Week 5</td><td>Health Awareness</td><td><strong>Know what it does</strong><br><span class="week-label">2–7: name one thing it does for your body · 7–18: explain when you'd choose each food</span></td><td>Facilitate curiosity, no moralizing</td><td>Body awareness around food</td></tr>
-          <tr><td class="week-label">Week 6</td><td>Planning</td><td><strong>Design the next cycle</strong><br><span class="week-label">2–7: pick one food for next time · 7–18: propose a full theme and challenge</span></td><td>Step back entirely</td><td>Children own the program going forward</td></tr>
-        </tbody>
-      </table>
+  <section style="padding-top:2.5rem;">
+    <h2>How to support your child</h2>
+
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:1.5rem; margin-bottom:2rem;">
+      <div style="background:var(--green-pale); border-radius:8px; padding:1.25rem;">
+        <p style="font-size:0.82rem; font-weight:500; color:var(--green-dark); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:0.75rem;">Do this</p>
+        <ul style="font-size:0.88rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1;">
+          <li>Let your child work at their own pace</li>
+          <li>Try new foods yourself first and describe what you notice</li>
+          <li>Step back once your child is at the prep table</li>
+          <li>Keep table conversation warm and curious</li>
+          <li>Celebrate effort, not outcome</li>
+        </ul>
+      </div>
+      <div style="background:var(--orange-light); border-radius:8px; padding:1.25rem;">
+        <p style="font-size:0.82rem; font-weight:500; color:var(--orange); text-transform:uppercase; letter-spacing:0.07em; margin-bottom:0.75rem;">Avoid this</p>
+        <ul style="font-size:0.88rem; color:var(--text-mid); padding-left:1.2rem; line-height:2.1;">
+          <li>Coaxing or saying "just one bite"</li>
+          <li>Taking over a task your child is doing</li>
+          <li>Correcting results that are safe but imperfect</li>
+          <li>Forcing participation if your child refuses</li>
+          <li>Instructional conversation at the table</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="photo-placeholder" style="height:220px; width:100%; margin-bottom:1.5rem;">
+      <span>📷 Family eating together: adults and children at the same table with shared dishes in the middle</span>
+      <span class="ph-dims">900 × 400 px · Prompt: "Candid overhead shot of a dining table with adults and children of mixed ages eating together, multiple shared dishes, warm lighting, conversation happening"</span>
+    </div>
+
+    <div class="callout">
+      <strong>If your child refuses to participate:</strong> That's normal, especially in the first session. Don't force it. They're still absorbing everything around them. Over 3 to 4 sessions, most children begin to engage on their own terms.
     </div>
   </section>
 
-  <section style="padding-top:0;">
-    <div class="section-label">Common questions</div>
+  <hr class="divider">
+
+  <section>
+    <h2>What actually works for adolescents</h2>
+    <p class="lead">Younger children naturally follow where their parents go. Adolescents have the choice not to and need more encouragement to participate. The approaches below make gatherings feel worth their time rather than a family obligation.</p>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon">&#x1F3C5;</div>
+        <h3>Tie it to their extracurriculars</h3>
+        <p>Organize the gathering group around an activity your teen is already in: a sports team, music group, or school club. When other kids there are people they enjoy spending time with, the motivation to show up becomes intrinsic.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F399;</div>
+        <h3>Give them real authority, not helper roles</h3>
+        <p>Teens disengage when they feel managed. Give them a lead role. Let them facilitate Show &amp; Tell, plan the next menu, or teach a skill to a younger child. When their competence is trusted, engagement follows.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F355;</div>
+        <h3>Connect food to what they already care about</h3>
+        <p>A teen athlete is open to conversations about performance nutrition. Frame the gathering around their existing interests rather than generic "healthy eating."</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F91D;</div>
+        <h3>Let them bring a friend</h3>
+        <p>A teen who resists family obligations will often engage more when a friend is present. Encourage older children to bring one friend to a session.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F4AC;</div>
+        <h3>Frame it as their contribution, not their participation</h3>
+        <p>"We need your help to plan this" feels different than "you have to come to this." Make their role explicit and give them credit for their contribution.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon">&#x1F4F8;</div>
+        <h3>Give them a documentation role</h3>
+        <p>Older teens can photograph and film the gathering. It gives them a reason to be present and engaged without requiring them to join every activity.</p>
+      </div>
+    </div>
+    <div class="callout callout-orange" style="margin-top: 2rem;">
+      <strong>The extracurricular connection in practice:</strong> Top performers in extracurricular activities often have good food habits. Encourage teens to discuss food with their peers and bring recommendations home. Parents should be open to trying those suggestions. An open ear and visible action encourage further participation.
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
     <h2>FAQ</h2>
     <div class="faq-list">
       <div class="faq-item">
@@ -661,28 +1011,16 @@ footer p { color: white; }
         <div class="faq-a">Refusal to participate is normal, especially in early sessions. The program intentionally removes all pressure for children to taste or touch anything. Research on food aversion in children shows that repeated low-pressure exposure leads to greater acceptance than force or reasoning. Over 3 to 4 sessions, most children begin to engage on their own terms. If a child consistently refuses, consider if they are at the right phase level.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How many families should be in a group?</div>
-        <div class="faq-a">Enough families to have a group of 4 to 10 children. This group size is enough to create the peer effect that is critical for social learning, but keeps the group small enough that each child gets meaningful attention.</div>
-      </div>
-      <div class="faq-item">
         <div class="faq-q" onclick="toggleFaq(this)">My children are very different ages. Can they participate together?</div>
-        <div class="faq-a">Yes, each child should be given a role that matches their skill level. The key is that each child is placed in a role they are slightly challenged in but can achieve with proper guidance to maximize their learning opportunity. Mixed-age mentorship happens naturally in these settings and benefits both the teaching older child and the learning younger child.</div>
+        <div class="faq-a">Yes. Each child is assigned to a prep table based on their skill phase, not age. Mixed-age siblings work at different tables during prep and come back together at Show &amp; Tell and at the meal. See the <a href="#" onclick="showPage('how')" style="color:var(--green-mid);">How It Works</a> page for detailed examples by family situation.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How do I keep teenagers engaged?</div>
-        <div class="faq-a">Adolescents often dislike being led by adults, and often disengage quickly in that scenario. Participating adolescents should be given a facilitator role rather than a helper role. See the full <a href="#" onclick="showPage('how')" style="color:var(--green-mid);">Adolescent Engagement section</a> on the How It Works page for the full breakdown.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">How do I keep my teenager engaged?</div>
+        <div class="faq-a">Give them a real role, not a helper role. Let them run Show &amp; Tell, plan the next menu, or take the host role in Week 3. See the full breakdown in the <a href="#" onclick="showPage('participants')" style="color:var(--green-mid);">What actually works for adolescents</a> section above.</div>
       </div>
       <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">What if a child has food allergies or restrictions?</div>
-        <div class="faq-a">Share dietary restrictions with all families before the first session so everyone can plan accordingly. The program works within any dietary framework since the structure doesn't depend on specific foods. Children with restrictions bring items that work for them, and the exploration is about variety and curiosity, not about eating everything on the table.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">How often should we gather?</div>
-        <div class="faq-a">Once a week to once a month works well. Gatherings should be frequent enough to build routine and familiarity between children, and infrequent enough to make the event feel special and manageable. The 6-session cycle can span up to 6 months depending on the group's schedule. Families can use the gap between sessions to try the activity at home, and bring those experiences back to the group.</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q" onclick="toggleFaq(this)">Do we need to follow the 6 sessions in order?</div>
-        <div class="faq-a">The order is designed so themes build on each other, so following session order is encouraged. That said, the program is flexible. If your group needs to repeat a session or skip one, it still works. The most important thing is showing up consistently.</div>
+        <div class="faq-q" onclick="toggleFaq(this)">What if my child has food allergies or restrictions?</div>
+        <div class="faq-a">Tell the host before the first session so they can plan accordingly. The program works within any dietary framework. Children with restrictions bring items that work for them, and the exploration is about curiosity, not eating everything on the table.</div>
       </div>
     </div>
   </section>
@@ -691,17 +1029,95 @@ footer p { color: white; }
 <!-- RESOURCES -->
 <div id="page-resources" class="page">
   <section>
-    <div class="section-label">For parents</div>
-    <h2>Resources and tools</h2>
-    <p class="lead">Everything you need to run the program and understand the research behind it. All tools are available inline below.</p>
+    <h2>Resources</h2>
+    <p class="lead">Two tools to use before each gathering: the skill finder tells you which prep table each child belongs at, and the kitchen tasks table tells you what to assign them once they're there.</p>
+    <div style="display:grid; grid-template-columns:1fr 1fr; gap:1rem; margin-top:2rem;">
+      <div class="card" style="cursor:pointer;" onclick="document.getElementById('skill-anchor').scrollIntoView({behavior:'smooth'})">
+        <div class="card-icon">&#x1F50D;</div>
+        <h3 style="font-size:0.95rem;">Skill-based level finder</h3>
+        <p style="font-size:0.85rem;">Answer 10 questions about your child to find their phase. Run this once per child before the first session.</p>
+      </div>
+      <div class="card" style="cursor:pointer;" onclick="document.getElementById('checklist-anchor').scrollIntoView({behavior:'smooth'})">
+        <div class="card-icon">&#x2705;</div>
+        <h3 style="font-size:0.95rem;">Facilitator checklist</h3>
+        <p style="font-size:0.85rem;">A printable before, during, and after checklist for the host to run through before families arrive.</p>
+      </div>
+      <div class="card" style="cursor:pointer;" onclick="document.getElementById('tasks-anchor').scrollIntoView({behavior:'smooth'})">
+        <div class="card-icon">&#x1F52A;</div>
+        <h3 style="font-size:0.95rem;">Kitchen tasks by phase</h3>
+        <p style="font-size:0.85rem;">A reference table showing example tasks and what to watch for at each of the four phases.</p>
+      </div>
+    </div>
   </section>
 
   <hr class="divider">
 
-  <section style="padding-top: 2.5rem;">
-    <div class="section-label">Inline tool</div>
+  <section style="padding-top:2.5rem;" id="skill-anchor">
+    <h2>Skill-based level finder</h2>
+    <p style="margin-bottom:0.5rem;">Select every skill your child currently has and the suggested phase will update automatically. Use this to know which prep table your child should be at.</p>
+    <div class="skill-selector" style="margin-top:1.5rem;">
+      <div class="skill-options">
+        <div class="skill-opt" onclick="selectSkillR(this,'q1')">Uses a spoon or fork independently</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q2')">Identifies colors and shapes on food</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q3')">Has washed, torn, or peeled food before</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q4')">Can use scissors safely</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q5')">Can follow a 2-step instruction without reminders</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q6')">Comfortable with a butter knife or Y-peeler</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q7')">Has helped choose ingredients at the store</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q8')">Can work the stovetop or oven safely with supervision</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q9')">Can read and follow a simple recipe independently</div>
+        <div class="skill-opt" onclick="selectSkillR(this,'q10')">Has cooked a full dish with minimal adult help</div>
+      </div>
+      <div class="skill-result" id="skill-result-resources">Select the skills your child has to see a suggested level.</div>
+    </div>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;" id="checklist-anchor">
+    <h2>Facilitator checklist</h2>
+    <p style="margin-bottom:1.5rem;">Print or pull this up before each gathering. Use it to prepare, stay on track, and close out cleanly.</p>
+    <div class="tool-section">
+      <h3>Before the gathering</h3>
+      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Confirm which families are coming and what they're bringing</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Note which items are needs-prep and which are ready-to-eat</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Check which skill phases are represented and set up one prep table per phase</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Check for any dietary restrictions or allergies across the group</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Know this week's focus before families arrive</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Set up the dining table: plates, utensils, serving bowls</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If Week 3: confirm which older child is taking the host role and brief them</label>
+      </div>
+    </div>
+    <div class="tool-section" style="margin-top:1.5rem;">
+      <h3>During the gathering</h3>
+      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Announce the week's focus as families settle in</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Gather children for Show &amp; Tell before any prep begins</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Direct children to the right prep table for their phase after Show &amp; Tell</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> No coaxing, no "just one bite" during the meal</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Model trying new foods yourself before asking children to</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If an older child is hosting, step back and let them run it even if imperfect</label>
+      </div>
+    </div>
+    <div class="tool-section" style="margin-top:1.5rem;">
+      <h3>Closing out</h3>
+      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Ask the reflection question before families start leaving</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Give every child a moment to answer, including the youngest ones</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Announce the next session's focus so families can start thinking about what to bring</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If Week 3: confirm the next round's menu as proposed by the children</label>
+        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Note anything worth adjusting for next time</label>
+      </div>
+    </div>
+    <p style="font-size:0.82rem; color:var(--text-light); margin-top:1.25rem;">Checkboxes reset when you reload the page. Alternatively, print the page to use as a physical checklist.</p>
+  </section>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;" id="tasks-anchor">
     <h2>Age-appropriate kitchen tasks</h2>
-    <p style="margin-bottom: 0.5rem;">Use this as a reference when planning what task to assign your child before or during a gathering. Tasks are organized by developmental stage, not strict age. Use the <a href="#" onclick="showPage('how'); setTimeout(function(){ document.getElementById('skill-section').scrollIntoView({behavior:'smooth'}); }, 50);" style="color:var(--green-mid);">skill selector</a> on How It Works to confirm the right level.</p>
+    <p style="margin-bottom:0.5rem;">Use this when planning which tasks to assign children at each prep table.</p>
     <table class="tasks-table" style="margin-top:1.5rem;">
       <thead><tr><th>Level</th><th>Example tasks</th><th>What to watch for</th></tr></thead>
       <tbody>
@@ -713,12 +1129,12 @@ footer p { color: white; }
         <tr>
           <td><strong>Phase 2</strong><br><span style="font-size:0.78rem; color:var(--text-light);">Ages 4 to 7</span></td>
           <td>Peel soft vegetables like banana or avocado · Spread with a butter knife · Juice citrus by hand · Mix salads · Measure ingredients with a cup</td>
-          <td>Let them work slowly. Expect mess. Focus on the task narrative: "You're making the dressing." Avoid correcting technique unless safety is involved.</td>
+          <td>Let them work slowly. Expect mess. Avoid correcting technique unless safety is involved.</td>
         </tr>
         <tr>
           <td><strong>Phase 3</strong><br><span style="font-size:0.78rem; color:var(--text-light);">Ages 7 to 12</span></td>
           <td>Peel hard vegetables with a Y-peeler · Slice soft foods with a table knife · Use a can opener · Read and follow simple recipes · Boil water with supervision</td>
-          <td>Introduce basic kitchen safety: hot surfaces and sharp edges. Let them recover from small mistakes. Ask them to read the next step before doing it.</td>
+          <td>Introduce basic kitchen safety: hot surfaces and sharp edges. Let them recover from small mistakes.</td>
         </tr>
         <tr>
           <td><strong>Phase 4</strong><br><span style="font-size:0.78rem; color:var(--text-light);">Ages 12 to 18</span></td>
@@ -729,138 +1145,74 @@ footer p { color: white; }
     </table>
   </section>
 
-  <hr class="divider">
-
-  <section style="padding-top: 2.5rem;">
-    <div class="section-label">Inline tool</div>
-    <h2>Facilitator checklist</h2>
-    <p style="margin-bottom:1.5rem;">Print or pull this up before each gathering. Use it to prepare, stay on track, and close out cleanly.</p>
-    <div class="tool-section">
-      <h3>Before the gathering</h3>
-      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Confirm which families are coming and what they're bringing</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Note which items are bring-and-prep and which are bring-and-share</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Check for any dietary restrictions or allergies across the group</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Know this session's theme and challenge before families arrive</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Prepare age-appropriate prep tasks for each child based on their skill level</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Set up a shared workspace with tools and surfaces ready before families arrive</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If Week 6: confirm which older child is taking the facilitator role</label>
-      </div>
-    </div>
-    <div class="tool-section" style="margin-top:1.5rem;">
-      <h3>During the gathering</h3>
-      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Announce the session challenge as families arrive and settle in</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Assign each child their prep task early, before the session gets moving</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Run Show &amp; Tell first wave before any chopping or cooking begins</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Keep the session challenge active through prep and at the table</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Run Show &amp; Tell second wave at the table for bring-and-share families</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> No coaxing, no "just one bite" during the meal</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Model trying new foods yourself before asking children to</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If an older child is leading, step back and let them run it even if imperfect</label>
-      </div>
-    </div>
-    <div class="tool-section" style="margin-top:1.5rem;">
-      <h3>Closing out</h3>
-      <div style="display:flex; flex-direction:column; gap:0.6rem; margin-top:0.5rem;">
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Ask the reflection question before families start leaving</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Give every child a moment to answer, including the youngest ones</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Announce the next session's theme so families can start thinking about what to bring</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> If Week 6: confirm the next cycle's themes as proposed by the children</label>
-        <label style="display:flex; align-items:flex-start; gap:0.75rem; font-size:0.88rem; color:var(--text-mid); cursor:pointer;"><input type="checkbox" style="margin-top:0.2rem; flex-shrink:0;"> Note anything worth adjusting for next time</label>
-      </div>
-    </div>
-    <p style="font-size:0.82rem; color:var(--text-light); margin-top:1.25rem;">Checkboxes reset when you reload the page. Alternatively, print the page to use as a physical checklist.</p>
-  </section>
-
-  <hr class="divider">
-
-  <section style="padding-top: 2.5rem;">
-    <div class="section-label">Further reading</div>
-    <h2>Research and reference</h2>
-    <p style="margin-bottom: 2rem;">The programs and research that informed this design, for parents who want to understand the reasoning behind the approach or go deeper into the evidence.</p>
-    <div class="resources-grid">
-      <div class="resource-card">
-        <div class="resource-tag">Research · Food habit formation</div>
-        <h3>Why exposure without pressure works</h3>
-        <p>Research consistently shows children need roughly 10 to 15 exposures to a new food before accepting it. Pressure accelerates rejection. This is the core reason every session removes all eating pressure and relies on repeated, low-stakes exposure instead.</p>
-      </div>
-      <div class="resource-card">
-        <div class="resource-tag">Program model · Family meals</div>
-        <h3>The Family Dinner Project</h3>
-        <p>A Harvard-affiliated initiative documenting the impact of regular shared family meals on nutrition, connection, and mental health. A strong research base for the social eating component of this program. <a href="https://thefamilydinnerproject.org/" target="_blank">Visit site</a></p>
-      </div>
-      <div class="resource-card">
-        <div class="resource-tag">Program model · Hands-on cooking</div>
-        <h3>Cooking with Kids</h3>
-        <p>Evidence-based programs showing that children who help prepare food are significantly more willing to eat it. A key reference for the hands-on preparation and technique elements built into every session.</p>
-      </div>
-      <div class="resource-card">
-        <div class="resource-tag">Pedagogy · Peer learning</div>
-        <h3>Montessori Practical Life activities</h3>
-        <p>The peer mentorship and mixed-age structure in this program draws from Montessori's approach to practical life activities: assigning children real tasks at appropriate skill levels, with older children modeling for younger ones.</p>
-      </div>
-      <div class="resource-card">
-        <div class="resource-tag">Research · Social learning</div>
-        <h3>Bandura's Social Learning Theory</h3>
-        <p>Children learn eating behaviors by observing others, especially peers their own age. The group gathering structure is designed to amplify this: children eating alongside other children is more influential than adults instructing them on what to eat.</p>
-      </div>
-      <div class="resource-card">
-        <div class="resource-tag">Pedagogy · Habit design</div>
-        <h3>Behavioral design and habit formation</h3>
-        <p>Rather than relying on motivation, this program focuses on making healthy food the path of least resistance through environmental design, consistent cues, and the compounding rewards of pride, social connection, and skill-building over time.</p>
-      </div>
-    </div>
-  </section>
 </div>
 
 <!-- ABOUT -->
 <div id="page-about" class="page">
   <div class="about-split">
     <div>
-      <div class="section-label">About this project</div>
-      <h2>What this is and why it exists</h2>
+        <h2>What this is and why it exists</h2>
       <p style="margin-bottom: 1.5rem;">Show Tell Share started with a simple observation: most approaches to healthy eating in children treat it as a knowledge problem. They teach children what's healthy. But knowing what's good to eat doesn't make you want to eat it.</p>
       <p style="margin-bottom: 1.5rem;">The real problem is habit, environment, and culture. Children develop lasting food behaviors through repeated positive exposure, through participation and ownership, and through watching the people around them. Nutrition lessons and reward charts don't do it on their own.</p>
       <p style="margin-bottom: 1.5rem;">This program is an attempt to build a system that works with how children actually learn, not how we wish they learned. It doesn't tell children what to eat. It creates the conditions where children become curious about food on their own terms and gradually take ownership of their choices.</p>
       <p>The design is intentionally non-formal: no classroom, no curriculum binders, no required reading for parents. Just a recurring gathering, a shared table, and a structure consistent enough to build routine while flexible enough to work for real families with real schedules.</p>
       <div style="margin-top: 2rem;">
-        <div class="section-label">Design principles</div>
-        <div class="callout" style="margin-top:0.75rem;">Ownership before instruction: children explore and choose before they're taught.</div>
-        <div class="callout" style="margin-top:0.5rem;">Exposure without pressure: repeated contact with food, never coercion to consume it.</div>
-        <div class="callout" style="margin-top:0.5rem;">Scaffolding that fades: parents do less each session as children gain confidence.</div>
-        <div class="callout" style="margin-top:0.5rem;">Peer learning over adult instruction: children are most influenced by what they see other children do.</div>
-        <div class="callout" style="margin-top:0.5rem;">Routine over motivation: a system that keeps running on hard days, not just inspired ones.</div>
-      </div>
-    </div>
-    <div>
-      <div class="section-label" style="margin-bottom: 1rem;">Learning theories behind the design</div>
-      <div class="theory-block">
-        <h3>Social Learning Theory · Albert Bandura</h3>
-        <p>Children learn by observing and imitating the people around them. Bandura's research shows that seeing peers and parents eat different foods is more powerful than any direct instruction. The gathering structure is designed to maximize peer modeling, especially across age groups.</p>
-      </div>
-      <div class="theory-block">
-        <h3>Experiential Learning · David Kolb</h3>
-        <p>Kolb's learning cycle describes how learning happens through doing and reflecting, not passive instruction. Repeated food selection, preparation, and eating followed by structured reflection builds understanding that lectures simply cannot. Each session closes with a reflection question for exactly this reason.</p>
-      </div>
-      <div class="theory-block">
-        <h3>Zone of Proximal Development and Scaffolding · Lev Vygotsky</h3>
-        <p>Vygotsky's Zone of Proximal Development describes what a child can accomplish with support that they cannot yet do alone. The program gradually reduces parent involvement as children gain confidence, shifting the scaffolding deliberately from Phase 1's high support toward Phase 4's minimal guidance.</p>
-      </div>
-      <div class="theory-block">
-        <h3>Enculturation</h3>
-        <p>Healthy eating habits are not built through isolated events. They're built through sustained participation in a food culture: the values, practices, and rituals that a family repeats together over time. The recurring gathering structure is the mechanism for that enculturation.</p>
-      </div>
-      <div class="theory-block">
-        <h3>Behavioral Design and Habit Formation</h3>
-        <p>Rather than relying on motivation, the design focuses on reducing friction and creating consistent environmental cues: the same structure, the same people, the same rhythm of sharing and eating together. Habits form through repetition of context, not willpower.</p>
-      </div>
-      <div class="theory-block">
-        <h3>Inquiry-Based Learning</h3>
-        <p>Rather than telling children about food, facilitators use guiding questions to trigger curiosity and self-directed exploration. "What do you think is inside it?" leads to more lasting engagement than "here's what's inside it." Every session prompt is framed as a question, not a statement.</p>
+            <div class="callout" style="margin-top:0.75rem;"><strong>Teach kids to cook.</strong> Children who help make food eat it. Not always, not the first time, but consistently over time. The kitchen is the classroom.</div>
+        <div class="callout" style="margin-top:0.5rem;"><strong>Model it yourself.</strong> Children learn eating habits by watching the adults and peers around them. If you eat it with curiosity, they notice.</div>
+        <div class="callout" style="margin-top:0.5rem;"><strong>Make it social.</strong> Cooking together and eating together is joyful. That joy is what makes people come back. The learning follows.</div>
       </div>
     </div>
   </div>
+
+  <hr class="divider">
+
+  <section style="padding-top:2.5rem;">
+    <h2>Further reading</h2>
+    <p style="margin-bottom:2rem;">The programs and learning theories behind the design, for parents who want to go deeper into the evidence.</p>
+    <div class="resources-grid">
+      <div class="resource-card">
+        <div class="resource-tag">Research · Food habit formation</div>
+        <h3>Repeated exposure, not pressure</h3>
+        <p>Children need roughly 10 to 15 low-pressure exposures to a new food before accepting it. Pressure accelerates rejection. This is the core reason every session removes all eating pressure. <em>Birch, L.L. (1980). Child Development.</em></p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Research · Social learning · Bandura</div>
+        <h3>Children learn by watching</h3>
+        <p>Seeing peers and parents eat different foods is more powerful than any direct instruction. Children eating alongside other children is more influential than adults telling them what to eat. <em>Bandura, A. (1977). Social Learning Theory.</em></p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Pedagogy · Experiential learning · Kolb</div>
+        <h3>Learning happens through doing</h3>
+        <p>Learning through doing and reflecting builds understanding that lectures cannot. Each session closes with a reflection question for exactly this reason. <em>Kolb, D.A. (1984). Experiential Learning.</em></p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Pedagogy · Scaffolding · Vygotsky</div>
+        <h3>Support fades as confidence grows</h3>
+        <p>Children accomplish more with support than alone. The program deliberately reduces parent involvement as children gain confidence, shifting from Phase 1's high support toward Phase 4's minimal guidance. <em>Vygotsky, L.S. (1978). Mind in Society.</em></p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Pedagogy · Habit design</div>
+        <h3>Routine over motivation</h3>
+        <p>Habits form through repetition of context, not willpower. The same structure, the same people, the same rhythm each time, that's what makes the program stick rather than fade after the first session.</p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Pedagogy · Enculturation</div>
+        <h3>Food culture is built, not taught</h3>
+        <p>Healthy eating habits come from sustained participation in a food culture, the values, practices, and rituals a family repeats together over time. The recurring gathering is that mechanism.</p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Program model · Family meals</div>
+        <h3>The Family Dinner Project</h3>
+        <p>Harvard-affiliated research documenting the impact of regular shared family meals on nutrition, connection, and mental health. <a href="https://thefamilydinnerproject.org/" target="_blank">Visit site</a></p>
+      </div>
+      <div class="resource-card">
+        <div class="resource-tag">Program model · Hands-on cooking</div>
+        <h3>Cooking with Kids</h3>
+        <p>Evidence-based programs showing that children who help prepare food are significantly more willing to eat it. <a href="https://cookingwithkids.org/programs/" target="_blank">Visit site</a></p>
+      </div>
+    </div>
+  </section>
+
 </div>
 
 <footer>
@@ -870,11 +1222,18 @@ footer p { color: white; }
 <script>
 function showPage(name) {
   document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.getElementById('page-' + name).classList.add('active');
+  var pg = document.getElementById('page-' + name);
+  if (pg) pg.classList.add('active');
   document.querySelectorAll('.nav-links a').forEach(a => a.classList.remove('active'));
   var navEl = document.getElementById('nav-' + name);
   if (navEl) navEl.classList.add('active');
   window.scrollTo(0, 0);
+}
+function showGrouping(tab, id) {
+  document.querySelectorAll('#skill-section .session-tab').forEach(t => t.classList.remove('active'));
+  document.querySelectorAll('#g1, #g2, #g3').forEach(c => c.classList.remove('active'));
+  tab.classList.add('active');
+  document.getElementById(id).classList.add('active');
 }
 function showSession(tab, id) {
   document.querySelectorAll('.session-tab').forEach(t => t.classList.remove('active'));
@@ -888,12 +1247,21 @@ function toggleFaq(el) {
 }
 var skillLevels = { q1:1, q2:1, q3:2, q4:2, q5:2, q6:2, q7:3, q8:3, q9:4, q10:4 };
 var levelText = {
-  1: '<strong>Phase 1: Exposure &amp; Play</strong> Your child is building foundational comfort with food. Focus on sensory engagement: touching, smelling, looking, and naming foods. No pressure to taste anything. Ideal gathering tasks: wash produce under water, tear vegetables by hand, stir cold ingredients in a bowl, arrange items on a plate.',
-  2: '<strong>Phase 2: Exploration &amp; Choice</strong> Your child is ready to make simple decisions and assist with basic food prep. Ideal gathering tasks: peel soft vegetables like banana or avocado, spread with a butter knife, juice citrus by hand, mix salads, measure ingredients with a cup.',
-  3: '<strong>Phase 3: Responsibility</strong> Your child can actively participate in cooking and take on a meaningful preparation role. Ideal gathering tasks: peel hard vegetables with a Y-peeler, slice soft foods with a table knife, use a can opener, read and follow simple recipes, boil water with supervision.',
-  4: '<strong>Phase 4: Independence</strong> Your child is ready for real ownership. Ideal gathering tasks: use a chef&#39;s knife with proper grip, cooking on a stove fire, follow multi-step recipes independently, adjust seasoning by taste, plan a balanced meal.'
+  1: '<strong>Phase 1 · Ages 2 to 4</strong> Your child is building foundational comfort with food. Focus on sensory engagement: touching, smelling, looking, and naming foods. No pressure to taste anything. Ideal gathering tasks: wash produce under water, tear vegetables by hand, stir cold ingredients in a bowl, arrange items on a plate.',
+  2: '<strong>Phase 2 · Ages 4 to 7</strong> Your child is ready to make simple decisions and assist with basic food prep. Ideal gathering tasks: peel soft vegetables like banana or avocado, spread with a butter knife, juice citrus by hand, mix salads, measure ingredients with a cup.',
+  3: '<strong>Phase 3 · Ages 7 to 12</strong> Your child can actively participate in cooking and take on a meaningful preparation role. Ideal gathering tasks: peel hard vegetables with a Y-peeler, slice soft foods with a table knife, use a can opener, read and follow simple recipes, boil water with supervision.',
+  4: '<strong>Phase 4 · Ages 12 to 18</strong> Your child is ready for real ownership. Ideal gathering tasks: use a chef&#39;s knife with proper grip, cooking on a stove fire, follow multi-step recipes independently, adjust seasoning by taste, plan a balanced meal.'
 };
 var selectedSkills = {};
+var selectedSkillsR = {};
+function selectSkillR(el, id) {
+  el.classList.toggle('active');
+  if (el.classList.contains('active')) selectedSkillsR[id] = skillLevels[id];
+  else delete selectedSkillsR[id];
+  var vals = Object.values(selectedSkillsR);
+  if (!vals.length) { document.getElementById('skill-result-resources').innerHTML = 'Select the skills your child has to see a suggested level.'; return; }
+  document.getElementById('skill-result-resources').innerHTML = levelText[Math.max.apply(null, vals)];
+}
 function selectSkill(el, id) {
   el.classList.toggle('active');
   if (el.classList.contains('active')) selectedSkills[id] = skillLevels[id];
